@@ -2,11 +2,23 @@ name: GSCF-Cypress-Tests
 on: [push]
 jobs:
   cypress-run:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        browser: [chrome]
+    container:
+      # Examples use latest tag
+      # For production use, to avoid the risk of breaking changes,
+      # choose a fixed version tag from
+      # https://hub.docker.com/r/cypress/browser/tags
+      image: cypress/browsers:latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
      
       - name: Cypress run
         uses: cypress-io/github-action@v5
+        with:
+          working-directory: examples/basic
+          browser: ${{ matrix.browser }}
       
