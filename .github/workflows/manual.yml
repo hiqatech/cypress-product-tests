@@ -13,8 +13,8 @@ jobs:
       # https://hub.docker.com/r/cypress/browser/tags
       image: cypress/browsers:latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: cypress-io/github-action@v6
+      - uses: actions/checkout@v3
+      - uses: cypress-io/github-action@v5
         with:
           working-directory: examples/basic
           browser: ${{ matrix.browser }}
