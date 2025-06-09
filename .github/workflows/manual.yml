@@ -1,0 +1,17 @@
+# This is a basic workflow that is manually triggered
+
+name: GSCF Cypress test
+on: [push]
+
+jobs:
+cypress-run:
+runs-on: ubuntu-latest
+
+steps:
+— name: Checkout
+uses: actions/checkout@v4
+
+— name:: Cypress Run
+uses: cypress-io/github-action@v4
+with:
+browser: chrome
