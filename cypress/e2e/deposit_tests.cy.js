@@ -7,10 +7,8 @@ const loginPage = new LoginPage()
 const depositPage = new DepositPage()
 const transactionPage = new TransactionPage()
 
-const main_url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login'
-
 beforeEach(function(){
-    cy.visit(main_url)
+    cy.visit(Cypress.env("baseUrl"))
 })
 
 describe('Banking project', () => {
