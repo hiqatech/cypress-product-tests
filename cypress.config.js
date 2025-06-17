@@ -7,7 +7,7 @@ export default defineConfig({
     },
 
     env: {
-baseUrl: 'https://www.programsbuzz.com/user/login',
+baseUrl: 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login',
 },
     
   },
