@@ -8,7 +8,7 @@ const depositPage = new DepositPage()
 const transactionPage = new TransactionPage()
 
 beforeEach(function(){
-    cy.visit(Cypress.env("baseUrl"))
+    cy.visit(Cypress.env('baseUrl'))
 })
 
 describe('Banking project', () => {
