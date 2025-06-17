@@ -1,4 +1,4 @@
-export default defineConfig({
+module.exports = defineConfig({
   e2e: {
 
     baseUrl: 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login',
