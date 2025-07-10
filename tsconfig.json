@@ -4,5 +4,5 @@
     "lib": ["es6", "dom"],
     "types": ["cypress", "node"]
   },
-  "include": ["**/*.ts", "cypress/e2e/deposit_tests.cy.js", "cypress/e2e/deposit_tests.cy.js"]
+  "include": ["**/*.ts", "cypress/e2e/tests/deposit_tests.cy.js", "cypress/e2e/tests/deposit_tests.cy.js"]
 }

@@ -4,7 +4,10 @@ export class LoginPage {
     user_select = '#userSelect'
     login_button = 'form.ng-valid > .btn'
 
+    main_url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login'
+
     clickCustomerLogin() {
+        cy.visit(main_url)
         cy.get(this.customer_login).click()
     }
 

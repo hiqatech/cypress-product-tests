@@ -1,17 +1,11 @@
 
-import {LoginPage} from "./Pages/login_page"
-import {DepositPage} from "./Pages/deposit_page"
-import {TransactionPage} from "./Pages/transaction_page"
+import {LoginPage} from "../modules/login_page"
+import {DepositPage} from "../modules/deposit_page"
+import {TransactionPage} from "../modules/transaction_page"
 
 const loginPage = new LoginPage()
 const depositPage = new DepositPage()
 const transactionPage = new TransactionPage()
-
-const main_url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login'
-
-beforeEach(function(){
-    cy.visit(main_url)
-})
 
 describe('Banking project', () => {
   it('Deposit Test', () => {
