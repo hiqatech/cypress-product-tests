@@ -7,7 +7,7 @@ export class LoginPage {
     main_url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login'
 
     clickCustomerLogin() {
-        cy.visit(this.main_url)
+        cy.visit(Cypress.config('baseUrl'))
         cy.get(this.customer_login).click()
     }
 
