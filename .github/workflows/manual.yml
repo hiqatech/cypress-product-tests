@@ -1,4 +1,4 @@
-name: GSCF-Cypress-Tests
+name: Cypress-JS-Tests
 on: [push]
 jobs:
   cypress-run:

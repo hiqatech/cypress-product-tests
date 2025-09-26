@@ -8,8 +8,19 @@ const depositPage = new DepositPage()
 const transactionPage = new TransactionPage()
 
 describe('Banking project', () => {
-  it('Deposit Test', () => {
 
+  it('Deposit 1 Test', () => {
+    loginPage.loginWithUser('Harry Potter')
+
+    depositPage.makeDeposit(100)
+    depositPage.verifyBalance(100)
+
+    transactionPage.clickTransactions()
+    transactionPage.verifyTransactionX(0,100)
+    transactionPage.clickBack()
+  })
+
+  it('Deposit 3 Test', () => {
     loginPage.loginWithUser('Harry Potter')
 
     depositPage.makeDeposit(100)
@@ -26,8 +37,8 @@ describe('Banking project', () => {
     transactionPage.verifyTransactionX(1,10)
     transactionPage.verifyTransactionX(2,5)
     transactionPage.clickBack()
-
   })
+
 })
 
 
