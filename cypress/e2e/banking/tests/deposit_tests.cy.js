@@ -1,4 +1,3 @@
-
 import {LoginPage} from "../modules/login_page"
 import {DepositPage} from "../modules/deposit_page"
 import {TransactionPage} from "../modules/transaction_page"
@@ -10,7 +9,7 @@ const transactionPage = new TransactionPage()
 describe('Banking project', () => {
 
   it('Deposit 1 Test', () => {
-    loginPage.loginWithUser('Harry Potter')
+    loginPage.loginWithUser('Ron Weasly')
 
     depositPage.makeDeposit(100)
     depositPage.verifyBalance(100)
