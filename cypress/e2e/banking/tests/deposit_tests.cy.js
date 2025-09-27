@@ -43,3 +43,4 @@ describe('Banking project', () => {
 
 
 // npx cypress run --spec "cypress/e2e/banking/tests/deposit_tests.cy.js" --browser chrome --headed --config baseUrl=https://your-custom-url.com
+// npx cypress run --e2e
